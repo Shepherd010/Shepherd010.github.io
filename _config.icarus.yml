@@ -158,8 +158,8 @@ article:
             url: https://creativecommons.org/licenses/by-nc/4.0/
 # Search plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Search/
-search:
-    type: insight
+search: 
+    type: baidu
     # Whether to include pages in the search results
     index_pages: true
 # Comment plugin configurations
@@ -214,10 +214,10 @@ donates:
         qrcode: /img/wechat.jpg
 # Share plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
-share:
-    type: sharethis
-    # URL to the ShareThis share plugin script
-    install_url: ''
+share: false
+    # type: sharethis
+    # # URL to the ShareThis share plugin script
+    # install_url: ''
 # Sidebar configurations.
 # Please be noted that a sidebar is only visible when it has at least one widget
 sidebar:
@@ -394,10 +394,10 @@ plugins:
         site_id: 
     # Enable the KaTeX math typesetting support
     # https://katex.org/
-    katex: true
+    katex: false
     # Enable the MathJax math typesetting support
     # https://www.mathjax.org/
-    mathjax: false
+    mathjax: true
     # Enable the Outdated Browser plugin
     # http://outdatedbrowser.com/
     outdated_browser: false
@@ -423,6 +423,6 @@ providers:
     # Name or URL template of the JavaScript and/or stylesheet CDN provider
     cdn: jsdelivr
     # Name or URL template of the webfont CDN provider
-    fontcdn: google
+    fontcdn: ustc
     # Name or URL of the fontawesome icon font CDN provider
     iconcdn: fontawesome
