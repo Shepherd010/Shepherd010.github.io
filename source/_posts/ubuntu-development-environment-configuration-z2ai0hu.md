@@ -7,13 +7,12 @@ comments: true
 toc: true
 ---
 
-# Ubuntu 开发环境配置
 
 ---
 
 * Ubuntu 开发环境 | PX4 指南（主） --- Ubuntu Development Environment
 * [https://docs.px4.io/main/en/dev_setup/dev_env_linux_ubuntu.html](https://docs.px4.io/main/en/dev_setup/dev_env_linux_ubuntu.html)
-* PX4 User and Developer Guide
+* PX4 User 和 Developer Guide
 * 2024-10-11 09:47:14
 
 ---
