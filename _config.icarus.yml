@@ -17,9 +17,9 @@ head:
         # when there is not enough space to display full name
         short_name: Shepherd010
         # The start URL of the web application
-        start_url: 
+        start_url: https://shepherd010.github.io/
         # The default theme color for the application
-        theme_color: 
+        theme_color: yellow
         # A placeholder background color for the application page to display
         # before its stylesheet is loaded
         background_color: 
@@ -107,7 +107,7 @@ navbar:
     menu:
         Home: /
         Archives: /archives
-        Categories: /categories
+        Categories: false
         Tags: /tags
         About: /about
     # Links to be shown on the right of the navigation bar
