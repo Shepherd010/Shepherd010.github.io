@@ -7,6 +7,7 @@ tags:
 permalink: /post/latex-mathematical-formula-symbol-daquan-z1lxedf.html
 comments: true
 toc: true
+excerpt: Latex数学公式符号大全
 ---
 
 
