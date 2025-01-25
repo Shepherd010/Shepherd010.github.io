@@ -165,44 +165,53 @@ search:
 # Comment plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
 comment:
-    type: disqus
-    # Disqus shortname
-    shortname: ''
+    type: valine
+    app_id: EfSXae5RMRncQAJAaxPQFYbp-gzGzoHsz
+    app_key: qNGysBFXRj8aO4QM6LkCpM1z
+    placeholder: ""                 # 可选填
+    avatar: mm                      # 可选填
+    avatar_force: false             # 可选填
+    meta: ["nick", "mail", "link"]  # 可选填
+    page_size: 10                   # 可选填
+    lang: zh-CN                     # 可选填
+    visitor: false                  # 可选填
+    highlight: true                 # 可选填
+    record_ip: false                # 可选填
+    server_urls:                    # 可选填
+    emoji_cdn:                      # 可选填
+    emoji_maps:                     # 可选填
+    enable_qq: false                # 可选填
+    required_fields: []             # 可选填
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
 donates:
-    # "Afdian.net" donate button configurations
-    -
-        type: afdian
-        # URL to the "Afdian.net" personal page
-        url: ''
     # Alipay donate button configurations
     -
         type: alipay
         # Alipay qrcode image URL
-        qrcode: ''
+        qrcode: /img/alipay.jpg
     # "Buy me a coffee" donate button configurations
-    -
-        type: buymeacoffee
+    # -
+        # type: buymeacoffee
         # URL to the "Buy me a coffee" page
-        url: ''
+        # url: ''
     # Patreon donate button configurations
-    -
-        type: patreon
+    # -
+        # type: patreon
         # URL to the Patreon page
-        url: ''
+        # url: ''
     # Paypal donate button configurations
-    -
-        type: paypal
+    # -
+        # type: paypal
         # Paypal business ID or email address
-        business: ''
+        # business: ''
         # Currency code
-        currency_code: USD
+        # currency_code: USD
     # Wechat donate button configurations
     -
         type: wechat
         # Wechat qrcode image URL
-        qrcode: ''
+        qrcode: /img/wechat.jpg
 # Share plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
 share:
@@ -249,27 +258,31 @@ widgets:
             Twitter: false
             Dribbble: false
             RSS: false
-    # Table of contents widget configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: toc
-        # Whether to show the index of each heading
-        index: true
-        # Whether to collapse sub-headings when they are out-of-view
-        collapsed: true
-        # Maximum level of headings to show (1-6)
-        depth: 3
+    # # Table of contents widget configurations
+    # -
+    #     # Where should the widget be placed, left sidebar or right sidebar
+    #     position: left
+    #     type: toc
+    #     # Whether to show the index of each heading
+    #     index: true
+    #     # Whether to collapse sub-headings when they are out-of-view
+    #     collapsed: true
+    #     # Maximum level of headings to show (1-6)
+    #     depth: 3
     # Recommendation links widget configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: links
-        # Names and URLs of the sites
-        links:
-            Hexo: https://hexo.io
-            Bulma: https://bulma.io
+    # -
+    #     # Where should the widget be placed, left sidebar or right sidebar
+    #     position: left
+    #     type: links
+    #     # Names and URLs of the sites
+    #     links:
+    #         Hexo: https://hexo.io
+    #         Bulma: https://bulma.io
     # Categories widget configurations
+    -
+        type: toc
+        position: left
+
     -
         # Where should the widget be placed, left sidebar or right sidebar
         position: left
@@ -296,14 +309,14 @@ widgets:
         # Whether to show tags count, i.e. number of posts in the tag.
         show_count: true
     # Google FeedBurner email subscription widget configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: subscribe_email
-        # Hint text under the email input
-        description: 
-        # Feedburner ID
-        feedburner_id: ''
+    # -
+    #     # Where should the widget be placed, left sidebar or right sidebar
+    #     position: left
+    #     type: subscribe_email
+    #     # Hint text under the email input
+    #     description: 
+    #     # Feedburner ID
+    #     feedburner_id: ''
     # # Google AdSense unit configurations
     # -
     #     # Where should the widget be placed, left sidebar or right sidebar
