@@ -61,5 +61,4 @@ ignore: null
 theme: icarus
 deploy:
   type: ''
-toc:
-  maxDepth: 3
+  

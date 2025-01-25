@@ -282,6 +282,8 @@ widgets:
     -
         position: left
         type: toc
+        maxDepth: 3
+
         
 
     # -
