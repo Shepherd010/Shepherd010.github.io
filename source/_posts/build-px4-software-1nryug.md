@@ -21,7 +21,7 @@ toc: true
 
 * 构建 PX4 软件 | PX4 指南（主） --- Building PX4 Software
 * [https://docs.px4.io/main/en/dev_setup/building_px4.html](https://docs.px4.io/main/en/dev_setup/building_px4.html)
-* PX4 User 和 Developer Guide
+* PX4 User and Developer Guide
 * 2024-10-11 10:04:17
 
 ---
@@ -60,7 +60,7 @@ make px4_sitl gz_x500
 
 这将打开 PX4 控制台：
 
-​![PX4 Console](images/console_gazebo.1HYlL2vW-20241011100417-7hafouq.png)​
+​![PX4 Console](https://raw.githubusercontent.com/Shepherd010/Shepherd010.github.io/master/source/images/console_gazebo.1HYlL2vW-20241011100417-7hafouq.png)​
 
 您可能需要在继续之前启动 QGroundControl，因为默认的 PX4 配置在起飞前需要与地面控制连接。
 
@@ -72,13 +72,13 @@ pxh> commander takeoff
 
 该车辆将起飞，您将在模拟器用户界面中看到这一点：
 
-​![Gazebo UI with vehicle taking off](images/gazebo_takeoff.CxeFn6fJ-20241011100417-egxshgp.png)​
+​![Gazebo UI with vehicle taking off](https://raw.githubusercontent.com/Shepherd010/Shepherd010.github.io/master/source/images/gazebo_takeoff.CxeFn6fJ-20241011100417-egxshgp.png)​
 
 无人机可以通过输入 `commander land`​ 着陆，整个模拟可以通过按 CTRL+C（或输入 `shutdown`​ ）来停止。
 
 在地面控制站进行飞行模拟更接近于实际操作该飞行器。在飞行（起飞飞行模式）时点击地图上的一个位置并启用滑块。这将重新定位飞行器。
 
-​![QGroundControl GoTo](images/qgc_goto.BTsEWZBV-20241011100417-im3mo74.jpg)​
+​![QGroundControl GoTo](https://raw.githubusercontent.com/Shepherd010/Shepherd010.github.io/master/source/images/qgc_goto.BTsEWZBV-20241011100417-im3mo74.jpg)​
 
 ## 为 Pixhawk 构建
 
@@ -184,6 +184,6 @@ make px4_sitl list_vmd_make_targets
 
 PX4 固件版本和自定义固件版本通过 MAVLink AUTOPILOT\_VERSION 消息发布，并在 QGroundControl 设置 \> 概述机架面板中显示：
 
-​![Firmware info](images/qgc_setup_summary_airframe_firmware.CcZm2RSp-20241011100417-tuhoyq9.jpg)​
+​![Firmware info](https://raw.githubusercontent.com/Shepherd010/Shepherd010.github.io/master/source/images/qgc_setup_summary_airframe_firmware.CcZm2RSp-20241011100417-tuhoyq9.jpg)​
 
 这些是在构建时从您仓库树的活动 git 标签中提取的。git 标签应格式化为 `<PX4-version>-<vendor-version>`​ （例如，上图中的标签设置为 `v1.8.1-2.22.1`​ ）。
