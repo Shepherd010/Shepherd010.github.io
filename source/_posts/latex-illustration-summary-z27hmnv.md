@@ -7,11 +7,9 @@ tags:
 permalink: /post/latex-illustration-summary-z27hmnv.html
 comments: true
 toc: true
-excerpt: >-
-  本文介绍了 LaTeX 中插入图形的基本命令 `\includegraphics` 及其参数，比如指定大小与使用浮动体来管理图形位置。通过 `figure` 环境可以创建浮动图形，支持多个位置选项（h, t, b, p）以优化排版效果。同时，还提到了使用 `caption2` 宏包来自定义图形标题样式，提供不同对齐方式的选择。此外，文章示范了如何将多个图形并列显示在一个环境中，以及绘制多个并列浮动图形的基本方法。这些技巧有助于提高文档的视觉效果和排版质量。
 ---
 
-
+# LaTeX 插图总结
 
 ## includegraphics  命令
 
@@ -39,7 +37,7 @@ excerpt: >-
 
 参数详解
 
-​![](http://127.0.0.1:3606/assets/v2-3ab7e6ad17f705e5ba2fee515e6ba86d_r-20250117223912-dfi96op.jpg)​
+​![](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/20250224210222707.jpeg)​
 
 ### 指定大小
 
@@ -84,7 +82,7 @@ excerpt: >-
 
 效果：
 
-​![](http://127.0.0.1:3606/assets/v2-5b3faf592d0c4112824285b5b727ca7d_1440w-20250117223912-pdl4jeu.jpg)​
+​![](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/20250224210223280.jpeg)​
 
 [在线运行例子](https://app.moonpapers.com/project/share/5fb6a3400c491510c37bc22a)
 
@@ -119,7 +117,7 @@ excerpt: >-
 
 选项参数如下图
 
-​![](http://127.0.0.1:3606/assets/v2-3bdbc0ac7ee8d2fad3e13200a43f084a_r-20250117223912-nchyk36.jpg)​
+​![](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/20250224210223840.jpeg)​
 
 将整个 整个文档中的标题都为 centerlast 式样。
 
@@ -158,7 +156,7 @@ caption 宏包的标题样式参数如下：
 \end{figure}
 ```
 
-​![](http://127.0.0.1:3606/assets/v2-96f957adeb67f4a6a8bf099ad4d9fa1c_r-20250117223912-rg5rqee.jpg)​
+​![](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/20250224210224351.jpeg)​
 
 [在线运行这个例子](https://app.moonpapers.com/project/share/5fb6a6e40c491510c37bc238)
 
@@ -185,7 +183,7 @@ caption 宏包的标题样式参数如下：
 
 效果如下图
 
-​![](http://127.0.0.1:3606/assets/v2-5f94ee077e5226be1007d7e1d41a00d6_r-20250117223912-q0078rk.jpg)​
+​![](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/20250224210224948.jpeg)​
 
 [在线运行例子](https://app.moonpapers.com/project/share/5fb6a7430c491510c37bc23f)
 
@@ -254,9 +252,9 @@ caption 宏包的标题样式参数如下：
 
 效果：
 
-​![](http://127.0.0.1:3606/assets/v2-68255b992783753f0db22fbbf5d45901_r-20250117223912-rentzqx.jpg)​
+​![](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/20250224210225575.jpeg)​
 
-​![](http://127.0.0.1:3606/assets/v2-ce26502b2f7d3833f14b40e9644de103_r-20250117223912-anfp4qy.jpg)​
+​![](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/20250224210226165.jpeg)​
 
 ## 参考资料
 
