@@ -33,8 +33,6 @@ toc: true
 \end{document}
 ```
 
-[在线运行这个例子](https://app.moonpapers.com/project/share/5fb69ba90c491510c37bc21f)
-
 参数详解
 
 ​![](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/20250224210222707.jpeg)​
@@ -59,8 +57,6 @@ toc: true
 \includegraphics[width=0.80\textwidth]{a.jpg}
 ```
 
-[在线运行例子](https://app.moonpapers.com/project/share/5fb6a0e60c491510c37bc225)
-
 ## 浮动图形环境
 
 一般情况下我们很少会把图片直接插入到我们的文本当中，而是会给它放置在一个叫做浮动体的东西中。这样图片可以有一些相对位置的变换，不会造成分页困难等问题。
@@ -83,8 +79,6 @@ toc: true
 效果：
 
 ​![](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/20250224210223280.jpeg)​
-
-[在线运行例子](https://app.moonpapers.com/project/share/5fb6a3400c491510c37bc22a)
 
 图形的放置
 
@@ -135,8 +129,6 @@ caption 宏包的标题样式参数如下：
 * indent 与 normal 式样相似，只是标题文本从第二行开始， 每行行首缩进由命令 `\captionindent`​ 给出的长度。因为  `\captionindent`​ 的缺省值为零，通常用像  `\setlength{\captionindent}{1cm}`​ 这样的命令 来设置缩进值。
 * hang 与 normal 式样相似，只是标题文本从第二行开始， 每行行首缩进与标题标记宽度相等的长度。
 
-[在线运行例子](https://app.moonpapers.com/project/share/5fb6a5a00c491510c37bc22f)
-
 ## 并列图形
 
 使图形并列所需的命令依赖于用户到底想怎样来组织图形。这里介绍两种常见的并列图形。
@@ -157,8 +149,6 @@ caption 宏包的标题样式参数如下：
 ```
 
 ​![](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/20250224210224351.jpeg)​
-
-[在线运行这个例子](https://app.moonpapers.com/project/share/5fb6a6e40c491510c37bc238)
 
 ### 多个并列的浮动图形
 
@@ -184,8 +174,6 @@ caption 宏包的标题样式参数如下：
 效果如下图
 
 ​![](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/20250224210224948.jpeg)​
-
-[在线运行例子](https://app.moonpapers.com/project/share/5fb6a7430c491510c37bc23f)
 
 ## 图编号如何关联章节
 
@@ -247,8 +235,6 @@ caption 宏包的标题样式参数如下：
 
 \end{document}
 ```
-
-[在线运行例子](https://app.moonpapers.com/project/share/5fb6a7a80c491510c37bc248)
 
 效果：
 
