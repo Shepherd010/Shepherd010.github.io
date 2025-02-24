@@ -11,7 +11,7 @@ comments: true
 toc: true
 ---
 
-
+# 添加图标题、轴标签、图例、更改字体大小
 
 ### 1 添加标题
 
@@ -32,7 +32,7 @@ title('y = sin(x)-tan(sin(x))')
 
  **结果展示：**
 
- ![在这里插入图片描述](http://127.0.0.1:3606/assets/network-asset-655b36d01d9184a7e3d581d4e1fa11af-20241228214530-64ujnfw.png)​
+​![在这里插入图片描述](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/20250224205449015.png)​
 
 ### 2 添加轴标签
 
@@ -57,7 +57,7 @@ ylabel('Y(m)')
 
  **结果展示：**
 
- ![在这里插入图片描述](http://127.0.0.1:3606/assets/network-asset-7a8292f8773110713cde000c7b9dd031-20241228214530-eig0iot.png)​
+​![在这里插入图片描述](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/20250224205449516.png)​
 
 ### 3 添加图例
 
@@ -91,7 +91,7 @@ legend('y = sin(x)','y = cos(x)','y = tan((cos(x))','y = sin(x) - tan(cos(x))')
 
  **结果展示：**
 
- ![在这里插入图片描述](http://127.0.0.1:3606/assets/network-asset-6285ad5e38dadd5080be0a7afce1d271-20241228214530-c23pd6w.png)​
+​![在这里插入图片描述](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/20250224205450057.png)​
 
 ### 4 更改标题、标签、图例的字体大小
 
@@ -125,7 +125,7 @@ legend('y = sin(x)','y = cos(x)','y = tan((cos(x))','y = sin(x) - tan(cos(x))')
 
  **结果展示：**
 
- ![在这里插入图片描述](http://127.0.0.1:3606/assets/network-asset-1390d284589edb4f81a9713b437b06c3-20241228214531-fgrdkjv.png)​
+​![在这里插入图片描述](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/20250224205450592.png)​
 
 ---
 
