@@ -11,7 +11,7 @@ comments: true
 toc: true
 ---
 
-
+# VSCode+latex引用bibtex参考文献
 
 ---
 
@@ -73,7 +73,7 @@ latex references.tex
 * 在VSCode终端内运行命令"bibtex reference"
 * 回到tex在保存
 
- 此时就可以预览生成好的pdf文件了，效果如下，注意添加参考文献即更改lib文件之后需重新执行以上操作。  
- ![在这里插入图片描述](http://127.0.0.1:3606/assets/network-asset-c1f43b3940bb5b848e373222e0ffc5c2-20250118190527-nhv1bob.png)​
+此时就可以预览生成好的pdf文件了，效果如下，注意添加参考文献即更改lib文件之后需重新执行以上操作。  
+ ![在这里插入图片描述](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/20250224210257435.png)​
 
 ‍
