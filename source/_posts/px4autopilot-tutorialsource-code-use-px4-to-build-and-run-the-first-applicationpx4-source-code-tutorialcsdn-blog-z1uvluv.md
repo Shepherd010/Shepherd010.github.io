@@ -8,7 +8,7 @@ comments: true
 toc: true
 ---
 
-
+# 【PX4-AutoPilot教程-源码】使用PX4搭建并运行第一个应用程序_px4源码教程-CSDN博客
 
 本文主要说明如何搭建并运行你的第一个板载应用程序。
 
@@ -18,7 +18,7 @@ toc: true
 
 我们创建一个很小的应用程序，只是打印出来`Hello Sky!`​。
 
-​![在这里插入图片描述](http://127.0.0.1:9677/assets/network-asset-c7bfc92ed1cc50633a53a343aa2e030c-20241025170353-puf811a.png)​
+​![在这里插入图片描述](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/20250224205237274.png)​
 
 这包括一个**C 文件**和一个​**cmake 定义文件**​（它告诉工具链如何构建应用程序）。
 
@@ -106,7 +106,7 @@ menuconfig EXAMPLES_PX4_SIMPLE_APP
 
 为了运行它，首先需要确保它是作为PX4的一部分构建的。 应用程序被将依据目标的适当板级*cmake*文件添加到编译/固件中。
 
-​![在这里插入图片描述](http://127.0.0.1:9677/assets/network-asset-c950cf8294e7706b08f6f7056b0cfc0e-20241025170353-hnpxl7m.png)​
+​![在这里插入图片描述](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/20250224205522152.png)​
 
 首先需要在px4board文件中添加px4\_simple\_app，位置在Firmware/boards/px4/fmu-v2/default.px4board，在空白行添加以下语句。
 
@@ -114,13 +114,13 @@ menuconfig EXAMPLES_PX4_SIMPLE_APP
 CONFIG_EXAMPLES_PX4_SIMPLE_APP=y
 ```
 
-​![在这里插入图片描述](http://127.0.0.1:9677/assets/network-asset-acdd1fa896717bdeb4c60156bb7892c6-20241025170353-wju2c2f.png)​
+​![在这里插入图片描述](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/20250224205522675.png)​
 
 保存之后退出。
 
 打开命令行终端Terminal，使用`ls`​、`cd`​命令进入Firmware文件夹中。
 
-​![在这里插入图片描述](http://127.0.0.1:9677/assets/network-asset-ed18a8cf9dbf43e663d52a7731bb9a07-20241025170353-1gc9y42.png)​
+​![在这里插入图片描述](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/20250224205523246.png)​
 
 在Firmware文件夹中输入命令即可对固件进行编译。
 
@@ -128,11 +128,11 @@ CONFIG_EXAMPLES_PX4_SIMPLE_APP=y
 make px4_fmu-v2_default
 ```
 
-​![在这里插入图片描述](http://127.0.0.1:9677/assets/network-asset-da805012978328654f098b41d5be19d2-20241025170353-njkpo1e.png)​
+​![在这里插入图片描述](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/20250224205523844.png)​
 
 等待进度到100%即可完成固件编译。
 
-​![在这里插入图片描述](http://127.0.0.1:9677/assets/network-asset-66dd501205c804331540711d13442d5f-20241025170354-85pcu3t.png)​
+​![在这里插入图片描述](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/20250224205524399.png)​
 
 将编译好的固件下载到无人机，需要输入命令。
 
@@ -140,25 +140,25 @@ make px4_fmu-v2_default
 make px4_fmu-v2_default upload
 ```
 
-​![在这里插入图片描述](http://127.0.0.1:9677/assets/network-asset-c5359f99a672c24641b536fbf355eb18-20241025170354-71dij8i.png)​
+​![在这里插入图片描述](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/20250224205525017.png)​
 
 这里提示需要连接无人机的数据线，等待进度条读完即可完成烧录固件。
 
-​![在这里插入图片描述](http://127.0.0.1:9677/assets/network-asset-81ed1289ae355c22f64803491df96319-20241025170354-jj6j5hw.png)​
+​![在这里插入图片描述](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/20250224205525631.png)​
 
 ### 3.在QGC地面站MavlinkConsole终端运行px4\_simple\_app应用程序
 
 打开QGC地面站，进入MavlinkConsole终端。
 
-​![在这里插入图片描述](http://127.0.0.1:9677/assets/network-asset-496b9a79f8624eaf8946db6571613468-20241025170354-prw213g.png)​
+​![在这里插入图片描述](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/20250224205526249.png)​
 
 在终端中输入`help`​命令调出所有进程，这时会发现px4\_simple\_app已经在列表中。
 
-​![在这里插入图片描述](http://127.0.0.1:9677/assets/network-asset-230a96c5f17b258166f0681fb40608a5-20241025170354-crv4fsu.png)​
+​![在这里插入图片描述](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/20250224205526751.png)​
 
 在终端中输入`px4_simple_app start`​命令调用该进程。
 
-​![在这里插入图片描述](http://127.0.0.1:9677/assets/network-asset-1cce655aea142aad58cef8d0e92427ea-20241025170355-0g3lstd.png)​
+​![在这里插入图片描述](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/20250224205527271.png)​
 
 运行后会输出语句`INFO [px4_simple_app] Hello Sky!`​，说明程序运行成功。
 
