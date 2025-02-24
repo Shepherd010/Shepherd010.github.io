@@ -9,7 +9,7 @@ comments: true
 toc: true
 ---
 
-
+# LaTeX 超链接
 
 latex两种超链接的方法
 
@@ -47,4 +47,4 @@ latex两种超链接的方法
 
 样式分别如下：
 
-​![](undefined)
+​![](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/20250224210159396.png)[https://img2020.cnblogs.com/blog/2084280/202112/2084280-20211217102407693-2078175628.png](https://img2020.cnblogs.com/blog/2084280/202112/2084280-20211217102407693-2078175628.png)
