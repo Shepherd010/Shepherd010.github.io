@@ -8,11 +8,11 @@ comments: true
 toc: true
 ---
 
-# 【PX4-AutoPilot教程-源码】使用PX4搭建并运行第一个应用程序_px4源码教程-CSDN博客
+
 
 本文主要说明如何搭建并运行你的第一个板载应用程序。
 
-**Firmware/src/examples/px4\_simple\_app**[文件夹](https://so.csdn.net/so/search?q=%E6%96%87%E4%BB%B6%E5%A4%B9&spm=1001.2101.3001.7020)下默认已经有一个完整的例程，如果遇到了问题可以作为参考。如果需要自己重新编写的话请重命名px4\_simple\_app文件夹或删除px4\_simple\_app文件夹。
+**Firmware/src/examples/px4_simple_app**文件夹下默认已经有一个完整的例程，如果遇到了问题可以作为参考。如果需要自己重新编写的话请重命名px4\_simple\_app文件夹或删除px4\_simple\_app文件夹。
 
 ### 1.编写px4\_simple\_app应用程序文件
 
@@ -20,10 +20,10 @@ toc: true
 
 ​![在这里插入图片描述](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/20250224205237274.png)​
 
-这包括一个**C 文件**和一个​**cmake 定义文件**​（它告诉工具链如何构建应用程序）。
+这包括一个**C 文件**和一个**cmake 定义文件**（它告诉工具链如何构建应用程序）。
 
-1. 新建如下文件夹： ​**Firmware/src/examples/px4\_simple\_app**​。
-2. 在该目录中新建一个名为 **px4\_simple\_app.c** 的 C 文件：
+1. 新建如下文件夹： **Firmware/src/examples/px4_simple_app**。
+2. 在该目录中新建一个名为 **px4_simple_app.c** 的 C 文件：
 
 ```c++
 /**
@@ -42,9 +42,9 @@ int px4_simple_app_main(int argc, char *argv[])
 }
 ```
 
-**main函数必须命名为 “应用程序名称” + “\_” + “main” 的形式并从模块中导出`__EXPORT`​。**
+**main函数必须命名为 “应用程序名称” + “_” + “main” 的形式并从模块中导出**​ **​`__EXPORT。`​** ​
 
-> 这里`__EXPORT`​是一个宏定义，其定义在[Firmware](https://so.csdn.net/so/search?q=Firmware&spm=1001.2101.3001.7020)/src/modules/systemlib/visibility.h中
+> 这里`__EXPORT`​是一个宏定义，其定义在Firmware/src/modules/systemlib/visibility.h中
 >
 > ```c++
 > #ifdef __EXPORT
@@ -66,7 +66,7 @@ int px4_simple_app_main(int argc, char *argv[])
 
 ​`PX4_INFO`​相当于输出到PX4 shell的`printf`​（包含在Firmware/src/platforms/px4\_log.h中）。 这里有不同的日志级别：`PX4_INFO`​、`PX4_WARN`​、`PX4_ERR`​、`PX4_DEBUG`​。 警告和错误会额外添加到 ULog 并显示在 Flight Review 中。
 
-3. 创建并打开一个名为**CMakeLists.txt**的​**cmake定义文件**​：
+3. 创建并打开一个名为**CMakeLists.txt**的**cmake定义文件**：
 
 ```cmake
 px4_add_module(
@@ -94,7 +94,7 @@ menuconfig EXAMPLES_PX4_SIMPLE_APP
 		Enable PX4 simple app
 ```
 
-> ​**PX4 Kconfig符号命名约定**​：
+> **PX4 Kconfig符号命名约定**：
 >
 > 按照惯例，模块/驱动程序的符号是根据模块文件夹路径命名的。
 >
@@ -104,7 +104,7 @@ menuconfig EXAMPLES_PX4_SIMPLE_APP
 
 ### 2.编译并烧录px4\_simple\_app应用程序到飞控固件中
 
-为了运行它，首先需要确保它是作为PX4的一部分构建的。 应用程序被将依据目标的适当板级*cmake*文件添加到编译/固件中。
+为了运行它，首先需要确保它是作为PX4的一部分构建的。 应用程序被将依据目标的适当板级**cmake**文件添加到编译/固件中。
 
 ​![在这里插入图片描述](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/20250224205522152.png)​
 
