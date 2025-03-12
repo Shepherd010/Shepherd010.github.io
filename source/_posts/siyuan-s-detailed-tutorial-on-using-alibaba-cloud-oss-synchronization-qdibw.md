@@ -17,54 +17,52 @@ toc: true
 
 ---
 
-‍
-
 ## 1.创建存储桶
 
 * 登录 [阿里云官网](https://ld246.com/forward?goto=https%3A%2F%2Faccount.aliyun.com%2Flogin%2Flogin.htm%3Foauth_callback%3Dhttps%3A%2F%2Foss.console.aliyun.com%2Findex)，可以用支付宝扫码登录
 * 登录之后创建 Bucket
 
-  ![image.png](http://127.0.0.1:1547/assets/image-oZ0CBrT-20240710133010-9fkk8xk.png)​
+  ![image.png](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/image-oZ0CBrT-20240710133010-9fkk8xk.png)​
 * 「Bucket 名称」任取 (取完之后**复制**下来，等下要用)，地域选择离你最近的那个，其他的设置保持默认。  
   （PS：如果想使用香港免费额度的话，就是下图的“地域”选取香港即可，其余的步骤都一样）  
-  ​![image.png](http://127.0.0.1:1547/assets/image-UQrqmah-20240710133010-l7e4fma.png)​
+  ​![image.png](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/image-UQrqmah-20240710133010-l7e4fma.png)​
 * 创建完成后会跳转到如下界面，**复制**下「外网访问-Endpoint（地域节点）」  
-  ​![image.png](http://127.0.0.1:1547/assets/image-zdKuxKj-20240710133010-wagdwpp.png)​
+  ​![image.png](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/image-zdKuxKj-20240710133010-wagdwpp.png)​
 
   ‍
 
 ## 2.创建子账户
 
 * 这时候我们只有主账户，权限很高，风险也很大。同步不需要这么大的权限，所以接下来创建一个子账户接管部分权限。鼠标移动到右上角的头像位置，点击 「AccessKey 管理」  
-  ​![image.png](http://127.0.0.1:1547/assets/image-PjGH7yf-20240710133010-ou6it4p.png)​
+  ​![image.png](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/image-PjGH7yf-20240710133010-ou6it4p.png)​
 * 接下来会弹出一个安全提示的窗口，点击「开始使用子用户 AccessKey」
 
-![image.png](http://127.0.0.1:1547/assets/image-u0zGWCs-20240710133010-eadmfbd.png)​
+![image.png](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/image-u0zGWCs-20240710133010-eadmfbd.png)​
 
 * 然后「创建用户」  
-  ​![image.png](http://127.0.0.1:1547/assets/image-szohrIY-20240710133010-jpl64ft.png)​
+  ​![image.png](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/image-szohrIY-20240710133010-jpl64ft.png)​
 * 「登录名称」和「显示名称」任取，但是注意：「​**Open API 调用访问**​」要勾选上  
-  ​![image.png](http://127.0.0.1:1547/assets/image-0CnMgRd-20240710133010-oubgqhp.png)701 x 338
+  ​![image.png](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/image-0CnMgRd-20240710133010-oubgqhp.png)701 x 338
 * 点击确定之后，会显示  AccessKey ID 和 AccessKey Secret 的信息，两个都**复制**一下
 
   * 注意：AccessKey Secret 信息​**只会显示这一次**​，请妥善保管
 * 这里之前漏掉了一步，评论区有朋友提到了，感谢 Fix。
 * 在创建完子账户之后，需要给子账户授予 OSS 权限
-* 鼠标移动到右上角头像处，点击「访问控制」-「用户」-「添加权限」![image.png](http://127.0.0.1:1547/assets/image-Voizihy-20240710133010-yz607kf.png)
+* 鼠标移动到右上角头像处，点击「访问控制」-「用户」-「添加权限」![image.png](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/image-Voizihy-20240710133010-yz607kf.png)
 * 选中 AliyunOSSFullAccess，然后确定即可
 
-  ![image.png](http://127.0.0.1:1547/assets/image-P4oZQOm-20240710133010-ilpwkze.png)
+  ![image.png](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/image-P4oZQOm-20240710133010-ilpwkze.png)
 
   ‍
 
 ## 3.给子账户添加 Bucket 权限
 
 * 返回初始的 Bucket 界面，在「权限控制」-「Bucket 授权策略」中「新增授权」  
-  ​![image.png](http://127.0.0.1:1547/assets/image-BxQGW9E-20240710133010-ygf6c0k.png)​
+  ​![image.png](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/image-BxQGW9E-20240710133010-ygf6c0k.png)​
 
   ‍
 * 在授权界面，「授权资源」-「整个 Bucket」；「授权用户」-「子账号」-选择刚刚创建的子账号；「授权操作」-「完全控制」  
-  ​![image.png](http://127.0.0.1:1547/assets/image-QhLtzXZ-20240710133010-jzmmaeg.png)​
+  ​![image.png](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/image-QhLtzXZ-20240710133010-jzmmaeg.png)​
 
   ‍
 
