@@ -40,29 +40,29 @@ hexo deploy
 
 3. 推荐使用VS Code搭配Github插件进行开发，和远程仓库同步。写出一篇文档后进行分支的同步，看Action是否正常运行，Page是否成功部署：
 
-![image](https://raw.githubusercontent.com/Shepherd010/Shepherd010.github.io/master/source/images/image-20250313150100-6sezru7.png "VS Code同步仓库")​
+![image](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/image-20250313150100-6sezru7.png "VS Code同步仓库")​
 
 ‍
 
-![image](https://raw.githubusercontent.com/Shepherd010/Shepherd010.github.io/master/source/images/image-20250313150417-7cxmwme.png "Github Action正常运行")​
+![image](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/image-20250313150417-7cxmwme.png "Github Action正常运行")​
 
 ### 三、 思源笔记插件“发布工具”的设置
 
 1. 安装“发布工具”
 
-![image](https://raw.githubusercontent.com/Shepherd010/Shepherd010.github.io/master/source/images/image-20250313150625-0huzj7c.png "发布工具插件页")
+![image](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/image-20250313150625-0huzj7c.png "发布工具插件页")
 
 2. 对其进行设置
 
-![image](https://raw.githubusercontent.com/Shepherd010/Shepherd010.github.io/master/source/images/image-20250313150704-gz63icy.png)
+![image](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/image-20250313150704-gz63icy.png)
 
 按说明添加HEXO平台
 
-![image](https://raw.githubusercontent.com/Shepherd010/Shepherd010.github.io/master/source/images/image-20250313150817-djbfodd.png)
+![image](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/image-20250313150817-djbfodd.png)
 
 3. 添加插件在Github平台的鉴权
 
-![image](https://raw.githubusercontent.com/Shepherd010/Shepherd010.github.io/master/source/images/image-20250313150927-rledt69.png)
+![image](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/image-20250313150927-rledt69.png)
 
 注意：有效期请设置永久有效，权限最低要给`workflow 更新 GitHub Actions 工作流程`​
 
@@ -81,7 +81,7 @@ hexo deploy
 2. 也可以使用其他家的模型，例如qwen、deepseek等
 3. 在思源设置中填写对应API、模型、接入点
 
-![image](https://raw.githubusercontent.com/Shepherd010/Shepherd010.github.io/master/source/images/image-20250313152315-gx1b90n.png)
+![image](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/image-20250313152315-gx1b90n.png)
 
 4. 不同家的大模型的接入，只是“API基础地址”、“模型”、“API Key”需要改变，不需要改变最上方的“API提供商”，详见：
 
@@ -89,32 +89,32 @@ hexo deploy
 
 5. 现在可以在“发布工具”的常规发布页，调用更复杂的发布方式了：
 
-![image](https://raw.githubusercontent.com/Shepherd010/Shepherd010.github.io/master/source/images/image-20250313152705-11uryoo.png)
+![image](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/image-20250313152705-11uryoo.png)
 
 ### 五、 图片的发表
 
 1. 没有配置图床之前，发表的图片默认为本地链接，没有一同上传到服务器，会出现图片破损的情况，与此同时你的思源本地服务还开着，在本地电脑上会看到图片已经上传的假象，因为网站通过思源本地服务器读取到了图片，而在别的设备上会看到图片的破损：
 
-    ![image](https://raw.githubusercontent.com/Shepherd010/Shepherd010.github.io/master/source/images/image-20250313153307-eml7sq9.png)
+    ![image](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/image-20250313153307-eml7sq9.png)
 
 2. 下载PicGo图床工具，并进行配置，上一篇规划中有教程链接，故不在赘述，我使用的是阿里云OSS存储，配置如下，仅供参考：
 
-    ![image](https://raw.githubusercontent.com/Shepherd010/Shepherd010.github.io/master/source/images/network-asset-20250313153523340-20250313155416-96w9zxm.png)​
+    ![image](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/network-asset-20250313153523340-20250313155416-96w9zxm.png)​
 
 3. 在思源插件中下载“PicGo图床”插件并配置
 
-    ![image](https://raw.githubusercontent.com/Shepherd010/Shepherd010.github.io/master/source/images/network-asset-20250313153621752-20250313155416-36nahj8.png)
-    ![image](https://raw.githubusercontent.com/Shepherd010/Shepherd010.github.io/master/source/images/network-asset-20250313153817121-20250313155416-2lje9nn.png)
+    ![image](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/network-asset-20250313153621752-20250313155416-36nahj8.png)
+    ![image](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/network-asset-20250313153817121-20250313155416-2lje9nn.png)
 
     一定要选择app，不要选择内置服务，内置服务好像有问题。
 4. 在“发布工具”插件的HEXO平台设置中，图床服务选择PicGo插件
 
-    ![image](https://raw.githubusercontent.com/Shepherd010/Shepherd010.github.io/master/source/images/network-asset-20250313154006527-20250313155416-4i3icls.png)
+    ![image](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/network-asset-20250313154006527-20250313155416-4i3icls.png)
 
 5. 通过发布工具发表一篇带图片的文章，用另一个设备检测是否正常显示
 6. 查看PicGo相册中是否正常显示
 
-    ![image](https://raw.githubusercontent.com/Shepherd010/Shepherd010.github.io/master/source/images/network-asset-20250313154135079-20250313155416-egxgxf2.png)​
+    ![image](https://pic-lxy.oss-cn-shenzhen.aliyuncs.com/img/network-asset-20250313154135079-20250313155416-egxgxf2.png)​
 7. 注意：在文章发表的时候，必须保证PicGo应用在后台运行，因为PicGo插件是调用其接口实现的
 
 ## 六、 HEXO主题的配置
